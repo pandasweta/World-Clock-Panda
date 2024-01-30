@@ -15,14 +15,14 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="src/style.css" /> -->
+    <link rel="stylesheet" href="src/style.css" />
     <title>World Clock-by Sweta Panda</title>
   </head>
   <body>
     <div class="world-clock-container">
       <h1>World Clock</h1>
 
-      <select>
+      <select id="select-cities">
         <option value="">Select the city from the list...</option>
         <option value="New Delhi">New Delhi,India</option>
         <option value="Amsterdam">Amsterdam,Netherlands</option>
@@ -30,34 +30,37 @@
         <option value="New York">New York,USA</option>
         <option value="Auckland">Auckland,NZ</option>
       </select>
-      <div class="cities">
-        <h2>
-          <div class="city1">
-            Amsterdam
-            <div class="date">29 January</div>
-            <div class="time">11:52</div>
-          </div>
 
-          <div class="city2">
-            New Delhi
-            <div class="date">29 January</div>
-            <div class="time">11:52</div>
-          </div>
-
-          <div class="city3">
-            New York
-            <div class="date">29 January</div>
-            <div class="time">11:52</div>
-          </div>
-          <div></div>
-          <div class="city4">
-            Auckland
-            <div class="date">29 January</div>
-            <div class="time">11:52</div>
-          </div>
-          <div></div>
-        </h2>
+      <div class="city">
+        <div>
+          <h2>Amsterdam</h2>
+          <div class="date">January 30th 2024</div>
+        </div>
+        <div class="time">13:35:20</div>
       </div>
+
+      <div class="city">
+        <div>
+          <h2>New Delhi</h2>
+          <div class="date">January 30th 2024</div>
+        </div>
+        <div class="time">13:35:20</div>
+      </div>
+
+      <!-- <div class="cities">
+        <div>
+          <h2>Tokyo</h2>
+          <div class="date">29 January</div>
+        </div>
+        <div class="time">11:52</div>
+
+        <div class="cities">
+        <div>
+          <h2>Auckland</h2>
+          <div class="date">29 January</div>
+        </div>
+        <div class="time">11:52</div> -->
+
       <footer>
         👩‍💻by Sweta Panda is open-sourced on
         <a
