@@ -40,7 +40,7 @@ select {
   margin: 10px 0;
   display: flex;
   justify-content: space-between;
-  padding: 25px 10px 0 10px;
+  padding: 20px 10px 0 10px;
 
   max-width: 600px;
   max-height: 300px;
@@ -54,9 +54,15 @@ select {
   font-weight: bold;
   color: blueviolet;
 }
+small {
+  font-size: 20px;
+  vertical-align: middle;
+}
 .date {
   opacity: 0.5;
   font-size: 14px;
+  line-height: 0.5;
+  padding-bottom: 20px;
 }
 footer {
   border-top: 1px solid rgba(39, 33, 66, 0.08);
