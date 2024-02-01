@@ -41,14 +41,11 @@ select {
   display: flex;
   justify-content: space-between;
   padding: 20px 10px 0 10px;
-
   max-width: 600px;
   max-height: 300px;
   border-radius: 8px;
-  /* box-shadow: 0 30px 50px rgba(28, 61, 66, 0.08); */
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-
 .time {
   font-size: 32px;
   font-weight: bold;
