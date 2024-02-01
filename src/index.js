@@ -29,11 +29,16 @@ setInterval(displayTime, 1000);
 
 function showCitiesTimeDate(event) {
 
-    let TimeZone = event.target.value;
-    let cityTimeZone = moment().tz(TimeZone);
-    let cityName = TimeZone.replace("_", " ").split("/")[1];
+    let timeZone = event.target.value;
+    if (timeZone === "current-location") {
+        timeZone = moment.tz.guess();
+    }
+    let cityTimeZone = moment().tz(timeZone);
+
+    let cityName = timeZone.replace("_", " ").split("/")[1];
     // let cityTime = moment().tz(TimeZone).format("hh:mm:ss [<small>]A[<small>]");
-    let cityDate = moment().tz(TimeZone).format("MMMM Do YYYY");
+    let cityDate = moment().tz(timeZone).format("MMMM Do YYYY");
+
     let cityNameElement = document.querySelector("#cities");
     cityNameElement.innerHTML = `<div class="city">
           <div>
