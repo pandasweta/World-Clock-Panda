@@ -46,7 +46,9 @@ function showCitiesTimeDate(event) {
             <div class="date">${cityDate}</div>
           </div>
           <div class="time">${cityTimeZone.format("hh:mm:ss A")}</div>
-    </div>`
+    </div>
+    <a href = "index.html">All Cities</a>`;
+
 
 
 }
